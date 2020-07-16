@@ -1,7 +1,7 @@
 {
-  "name": "typescript-template-repository",
-  "version": "0.0.0",
-  "description": "This is a template for TypeScript projects",
+  "name": "7-segment-timer.client",
+  "version": "0.0.0-alpha.1",
+  "description": "This is the client for the 7 Segment Timer.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -14,23 +14,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SteffenKn/typescript-template-repository.git"
+    "url": "git+https://github.com/SteffenKn/7-segment-timer.client.git"
   },
   "keywords": [
-    "typescript",
-    "template"
+    "7-Segment",
+    "Led",
+    "WS2801",
+    "Timer",
+    "Client"
   ],
   "author": "Steffen Knaup",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SteffenKn/typescript-template-repository/issues"
+    "url": "https://github.com/SteffenKn/7-segment-timer.client/issues"
   },
-  "homepage": "https://github.com/SteffenKn/typescript-template-repository#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/SteffenKn/7-segment-timer.client#readme",
+  "dependencies": {
+    "node-fetch": "2.6.0"
+  },
   "devDependencies": {
+    "7-segment-timer.contracts": "0.0.1-alpha.2",
     "@types/chai": "4.2.11",
     "@types/mocha": "7.0.2",
     "@types/node": "12.12.6",
+    "@types/node-fetch": "^2.5.7",
     "c8": "7.2.0",
     "chai": "4.2.0",
     "mocha": "8.0.1",
