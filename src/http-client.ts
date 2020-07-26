@@ -98,7 +98,7 @@ export class HttpClient {
       'Content-Type': 'application/json',
     };
 
-    if (options?.headers !== undefined) {
+    if (options && options.headers !== undefined) {
       const optionHeaders: Array<string> = Object.keys(options.headers);
 
       for (const header of optionHeaders) {
