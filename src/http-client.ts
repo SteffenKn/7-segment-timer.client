@@ -20,9 +20,11 @@ export class HttpClient {
 
     const response: Response = await fetch(prefixedUrl, request);
     const body: string = await response.text();
+    if (response.status < 200 || response.status >= 300) {
+      throw new Error(response.statusText);
+    }
 
     const parsedResponse: TResult = this.tryParseStringtoJson<TResult>(body);
-
     return parsedResponse;
   }
 
@@ -40,8 +42,11 @@ export class HttpClient {
     const response: Response = await fetch(prefixedUrl, request);
     const body: string = await response.text();
 
-    const parsedResponse: TResult = this.tryParseStringtoJson<TResult>(body);
+    if (response.status < 200 || response.status >= 300) {
+      throw new Error(response.statusText);
+    }
 
+    const parsedResponse: TResult = this.tryParseStringtoJson<TResult>(body);
     return parsedResponse;
   }
 
@@ -59,8 +64,11 @@ export class HttpClient {
     const response: Response = await fetch(prefixedUrl, request);
     const body: string = await response.text();
 
-    const parsedResponse: TResult = this.tryParseStringtoJson<TResult>(body);
+    if (response.status < 200 || response.status >= 300) {
+      throw new Error(response.statusText);
+    }
 
+    const parsedResponse: TResult = this.tryParseStringtoJson<TResult>(body);
     return parsedResponse;
   }
 
@@ -76,9 +84,11 @@ export class HttpClient {
 
     const response: Response = await fetch(prefixedUrl, request);
     const body: string = await response.text();
+    if (response.status < 200 || response.status >= 300) {
+      throw new Error(response.statusText);
+    }
 
     const parsedResponse: TResult = this.tryParseStringtoJson<TResult>(body);
-
     return parsedResponse;
   }
 
