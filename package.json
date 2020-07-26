@@ -1,6 +1,6 @@
 {
   "name": "7-segment-timer.client",
-  "version": "0.0.0-alpha.3",
+  "version": "0.0.0-alpha.4",
   "description": "This is the client for the 7 Segment Timer.",
   "main": "dist/index.js",
   "scripts": {
