@@ -1,1 +1,1 @@
-# typescript-template-repository
+# 7 Segment Timer Client
