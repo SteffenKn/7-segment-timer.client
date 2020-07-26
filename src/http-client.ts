@@ -85,7 +85,7 @@ export class HttpClient {
   private buildUrl(url: string): string {
     if (this.baseUrl.endsWith('/') && url.startsWith('/')) {
       return `${this.baseUrl}${url.replace('/', '')}`;
-    } else if (!this.baseUrl.endsWith('/') && url.startsWith('/')) {
+    } else if (!this.baseUrl.endsWith('/') && !url.startsWith('/')) {
       return `${this.baseUrl}/${url}`;
     }
 
