@@ -2,6 +2,8 @@ import {Animations, RgbColor, routes, Time} from '7-segment-timer.contracts';
 
 import {HttpClient} from './http-client';
 
+export * from '7-segment-timer.contracts';
+
 export default class SevenSegmentTimerClient {
   private httpClient: HttpClient;
 
