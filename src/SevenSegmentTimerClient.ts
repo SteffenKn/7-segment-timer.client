@@ -14,7 +14,7 @@ export default class SevenSegmentTimerClient {
   }
 
   public showCurrentTime(colors?: RgbColor | Array<RgbColor>): Promise<void> {
-    return this.httpClient.post(routes.Off, {color: colors});
+    return this.httpClient.post(routes.ShowCurrentTime, {color: colors});
   }
 
   public startTimer(time: Time, colors?: RgbColor | Array<RgbColor>): Promise<void> {
