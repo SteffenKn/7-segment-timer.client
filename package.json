@@ -31,7 +31,7 @@
   "homepage": "https://github.com/SteffenKn/7-segment-timer.client#readme",
   "dependencies": {
     "7-segment-timer.contracts": "0.0.1-alpha.2",
-    "node-fetch": "2.6.0"
+    "node-fetch": "2.6.1"
   },
   "devDependencies": {
     "@types/chai": "4.2.11",
